@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="org.js" defer></script>
+</head>
+<body>
+    <div class="glassmorphism-container">
+        <form id="sign-in-form" action="submit.php" method="post">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="password" id="admin-password" name="admin-password" placeholder="Password" required>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <button onclick="location.href='index.html'">Submit</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('sign-in-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            console.log('Form submitted');
+        });
+    </script>
+</body>
+</html>
